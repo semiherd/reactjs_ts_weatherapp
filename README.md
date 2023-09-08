@@ -3,7 +3,7 @@ Semih ERDOGAN - ELEMENTS INTERACTIVE INTERVIEW CASE PROJECT <br><br>
 - I used mobile first responsive approach.<br><br>
 Libraries Used:<br>
 - cors-anywhere<br>
-- axios<br><br>
+- axios<br>
 - react-testing-library<br>
 - react-router-dom<br><br>
 User stories<br>
