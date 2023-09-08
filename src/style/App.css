@@ -1,0 +1,13 @@
+
+/* initial styles */
+body{
+  overflow-x: hidden;
+  font-family: 'NotoSerif';
+  font-size: 14px;
+}
+/* fonts */
+@font-face{
+  font-family: 'NotoSerif';
+  src: url('../asset/font/NotoSerif-Regular.ttf')
+}
+

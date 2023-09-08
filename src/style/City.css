@@ -1,0 +1,113 @@
+:root{
+  --city-item-width-mobile: 70vw;
+  --city-item-height-mobile: 50vw;
+  --city-item-width-tablet: 40vw;
+  --city-item-height-tablet: 25vw;
+  --city-item-width-desktop: 20vw;
+  --city-item-height-desktop: 12vw;
+  --inputText:hsl(200, 15%, 8%);
+  --inputFocus:hsl(0, 0%, 52%); 
+  --titleColor: #5D4258;
+  --titleColor2: #6B5968;
+}
+h1{
+  font-size: 1em;
+  text-decoration: none;
+}
+h2{
+  font-size: 1.25em;
+  text-decoration: none;
+}
+h5{
+  font-size: 2em;
+  text-decoration: none;
+}
+.visible{
+	display: flex!important
+}
+.invisible{
+	display:none!important
+}
+.city-title {
+	text-decoration: none;
+	background:
+	linear-gradient(
+		to right,
+		rgba(100, 200, 200, 1),
+		rgba(100, 200, 200, 1)
+	),
+	linear-gradient(
+		to right,
+		rgba(255, 99, 71, 1),
+		rgb(9, 40, 67),
+		rgba(255, 255, 255, 1)
+	);
+	background-size: 100% 3px, 0 3px;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+.city-title:hover {
+	background-size: 0 5px, 100% 5px;
+}
+/*mobile*/
+@media screen and (min-width:300px){
+	
+	.name{
+		text-align: center;
+	}
+	.city-item{
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		flex-direction: column;
+		margin: 3vh 2vw;
+		padding: 1vh;
+		border-radius: 5px;
+		text-decoration:none;
+	}
+	.city-image{
+		width: var(--city-item-width-mobile);
+		height: var(--city-item-height-mobile);
+		align-self: center;
+		border-radius: 50px;
+		margin: 2vh 2vw;
+		padding: 0%;
+	}
+	.city-title{
+		padding: 1% 0;	
+		font-size: 1.5rem;
+	}		
+}
+
+/*tablet*/
+@media screen and (min-width:800px){
+	
+	.city-image{
+		width: var(--city-item-width-tablet);
+		height: var(--city-item-height-tablet);
+		align-self: center;
+		border-radius: 50px;
+		margin: 1vh 1vw;
+		padding: 0%;
+	}
+}
+/*laptop*/
+@media screen and (min-width:1200px){
+	body{
+    font-size: 15px;
+  }
+	.city-item{
+		flex-direction: column;
+		border-radius: 15px;
+	}
+	.city-image{
+		width: var(--city-item-width-desktop);
+		height: var(--city-item-height-desktop);
+		align-self: center;
+		border-radius: 50px;
+		margin: 1vh 1vw;
+		padding: 0%;
+	}
+	
+}	

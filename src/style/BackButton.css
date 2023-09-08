@@ -1,0 +1,115 @@
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+@keyframes transition-left{
+	0%{
+		transform: translate(0,0);
+	}
+	50%{
+		transform: translate(-2.5vw,0);
+	}
+	100%{
+		transform: translate(-5vw,0);
+	}
+}
+@keyframes transition-right{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 2;
+	}
+}
+@media screen and (min-width:300px){
+	.back-button{
+		position: relative;
+		top: 1vh;
+		left: 5vw;
+		margin: 1vh 0;
+	}
+	.text{
+		display: none;
+	}
+	.icon{
+		position: relative;
+		left: 1vw;
+		justify-content: center;
+		width: 10vw;	
+		height: 8vh;
+		color: white;
+	}
+}
+@media screen and (min-width:800px){
+	.back-button{
+		position: relative;
+		top: 1vh;
+		left: 1vw;
+		margin: 1vh 0;
+	}
+}
+@media screen and (min-width:1200px){	
+	.text{
+		display:none;
+		width: 5vw;
+		height: 8vh;
+		padding: 2%;
+		margin: 1vh 1vw;
+		background-color: var(--text-color);
+		color: white;
+		align-self: center;
+		text-align: center;
+		height: auto;
+		border-radius: 3%;
+		border-bottom-left-radius: 500px;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 500px;
+		border-bottom-right-radius: 100px;
+		position:relative;
+		left: -3vw;top: 0;
+	}
+	.icon:hover + .text{
+		display: inline-block;
+		animation: transition-right linear 5s;
+	}
+	.icon:hover{
+		transform: translateX(-5vw);
+		animation: transition-left linear 2s;
+	}
+	.back-button{
+		position: absolute;
+		top: 5vh;
+		left: -1vw;
+	}
+	.text{
+		display:none;
+		width: 5vw;
+		height: 8vh;
+		padding: 2%;
+		margin: 1vh 1vw;
+		background-color:  var(--foreground);
+		color: white;
+		align-self: center;
+		text-align: center;
+		height: auto;
+		border-radius: 3%;
+		border-bottom-left-radius: 500px;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 500px;
+		border-bottom-right-radius: 100px;
+		position:relative;
+		left: -3vw;top: 0;
+	}
+	.icon:hover + .text{
+		display: inline-block;
+		animation: transition-right linear 5s;
+	}
+	.icon:hover{
+		transform: translateX(-5vw);
+		animation: transition-left linear 2s;
+	}
+}
