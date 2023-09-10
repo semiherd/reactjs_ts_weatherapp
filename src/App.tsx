@@ -1,10 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import {Container} from './nav/Container'
 import { RouteItems } from './nav/RouteItems';
 
 function App() {
   
+  useEffect(() => {
+    //navigator.serviceWorker.register('/sw.js')
+  },[])
+
   return (
     <div className="App">
       <BrowserRouter>

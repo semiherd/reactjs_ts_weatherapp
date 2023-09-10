@@ -1,6 +1,7 @@
 import { useState,useMemo } from "react"
 import { TypeHeaderProps,CityDataProps,SortingOptions } from '../type';
 import SearchBar from '../component/search/SearchBar'
+import RefreshIcon from '../component/search/RefreshIcon'
 import SortIcon from '../component/search/SortIcon'
 import HiddenIcon from '../component/search/HiddenIcon'
 import '../style/Home.css'
@@ -9,23 +10,22 @@ import '../style/Header.css'
 export const Header = (props:TypeHeaderProps):JSX.Element => {
 	const { 
 		setSearchText,setSorting,setVisible,setHiddenItems,
-		sorting,visible,hiddenItems,
-		searchText }= props
+		sorting,visibleItems,hiddenItems,refreshFn,searchText }= props
 
 	const memoizedSearchBar = useMemo(() => {
-    return <SearchBar 
-			setSearchText={setSearchText} 
-			setSorting={setSorting} 
-			sorting={sorting} 
-			visibleItems={visible} />
+    return <SearchBar setSearchText={setSearchText} searchText={searchText} />
   }, [searchText])
 
 	const memoizedSortIcon = useMemo(() => {
-    return <SortIcon arr={visible} 
+    return <SortIcon visibleItems={visibleItems} 
 			setVisible={setVisible} 
 			sorting={sorting} 
 			setSorting={setSorting} />
   },[sorting])
+
+	const memoizedRefreshIcon = useMemo(() => {
+    return <RefreshIcon refreshFn={refreshFn} />
+  },[])
 
 	const memoizedHiddenIcon = useMemo(() => {
     return <HiddenIcon data={hiddenItems} updateData={setHiddenItems} />
@@ -36,7 +36,10 @@ export const Header = (props:TypeHeaderProps):JSX.Element => {
 				{memoizedSearchBar}
 				<div className="setting">
 					{memoizedHiddenIcon}
-					{memoizedSortIcon}
+					<div className="setting-icons">
+						{memoizedSortIcon}
+						{memoizedRefreshIcon}
+					</div>
 				</div>
 			</div>
 	)

@@ -7,9 +7,8 @@ import ListItems from '../component/home/List'
 import {fetchAll,handleFilter,sortByKey,handleLs,handleApiData} from '../service/index'
 import '../style/Home.css'
 import '../style/Header.css'
-import axios from 'axios'
 
-export const Home = () => {
+export const Home = ():JSX.Element => {
 	const [cityList,setCityList]= useState<CityDataProps[] | []>([])
 	const [searchText,setSearchText]= useState<string>('')
 	const [visible,setVisible]= useState<CityDataProps[] | []>([])
@@ -46,7 +45,6 @@ export const Home = () => {
 			const data:CityDataProps[]= await handleApiData(apiData)
 			const sorted:CityDataProps[]= sortByKey(data,"name",'asc') 
 			setCityList(sorted)
-
 		}catch(e){
 			console.log(e)
 		}
@@ -67,13 +65,14 @@ export const Home = () => {
 		<div>
 			<Header 
 				setSearchText= {setSearchText}
-				setSorting= {setSorting} 
+				searchText= {searchText}
 				setVisible= {setVisible}
+				visibleItems= {visible}
+				setSorting= {setSorting} 
+				sorting= {sorting}
 				setHiddenItems= {setHiddenItems}
 				hiddenItems= {hiddenItems}
-				sorting= {sorting}
-				visible= {visible}
-				searchText= {searchText}
+				refreshFn={initialData}
 			/>
 			<div className="app-body">
 				{visible.length>0 && memoizedList}

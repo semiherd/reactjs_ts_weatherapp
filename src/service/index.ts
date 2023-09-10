@@ -13,5 +13,5 @@ export {
 	handleApiData,
 	handleFilter,
 	handleLs,
-	sortByKey
+	sortByKey,
 }

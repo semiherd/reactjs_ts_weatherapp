@@ -45,22 +45,28 @@
 		margin: 2% ;
 		background-color: ghostwhite;
 	}
+	.setting-icons{
+		display: flex;
+	}
+	.setting-icons *{
+		width: 1vw;
+	}
 	.setting{
 		display: flex;
 		flex-direction: row;
 		align-self: center;
 		text-align: center;
 		justify-content: space-around;
-		width: 75vw;
+		width: 90vw;
 		height: 10vh;
 		transform: translate(0,2vh)
 	}
 	.setting *{
 		margin: 2%;
 		padding: 2%;
-		width: 25vw;
+		width: 15vw;
 	}
-	.sort-item .sort-icon{
+	.sort-item .sort-icon,.refresh-item .refresh-icon{
 		height: 4vh;
 		color: teal;
 	}
@@ -79,7 +85,7 @@
 		font-size: 2rem;
 		font-weight: 900;
 	}
-	.sort-item .sort-icon{
+	.sort-item .sort-icon,.refresh-item .refresh-icon{
 		position: relative;
 		top: -2vh;
 		height: 5vh;
@@ -123,7 +129,7 @@
 	
 }
 /*laptop*/
-@media screen and (min-width:1200px){	
+@media screen and (min-width:1100px){	
 	.header-bar{
 		display: flex;
 		flex-direction: row;
@@ -150,18 +156,25 @@
 	}
 	.setting{
 		display: flex;
-		width: 40vw;
+		width: 50vw;
 		transform: translate(0,1vh);
 		height: 5vh;
-		justify-content: space-around;
+		justify-content: center;
 	}
-	.setting *{
+	.setting-icons{
+		display: flex;
+		transform: translate(0,2vh);
+		align-self: center;
+		justify-content: center;
 		width: 20vw;
 	}
-	.sort-item{
-		display: block;
-		transform: translate(0,-2vh);
-	}	
+	.sort-item,.refresh-item{
+		width: 10vw;
+	}
+	.sort-icon,.refresh-icon{
+		align-self: center;
+		transform: translate(-3vw,1vh);
+	}
 	.search-bar input:focus { 
 		outline: none;
 		box-shadow: teal 20vw 0vw 10vw -15vw inset;

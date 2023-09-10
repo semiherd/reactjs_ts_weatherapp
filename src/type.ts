@@ -2,16 +2,32 @@ import React from "react"
 export type TempType= 'K'|'C';
 export type CityName= 'amsterdam' | 'barcelona' | 'budapest' | 'hong kong' | 'san francisco' | 'tokyo'
 export type SortingOptions= 'asc' | 'desc'
-export type TypeHeaderProps={
-			setSearchText: React.Dispatch<React.SetStateAction<string>>
-			setSorting: React.Dispatch<React.SetStateAction<SortingOptions>> 
-			setVisible: React.Dispatch<React.SetStateAction<CityDataProps[]>>
-			setHiddenItems: React.Dispatch<React.SetStateAction<string[]>> 
-			hiddenItems: string[]
-			sorting: SortingOptions
-			visible: CityDataProps[]
-			searchText: string
+
+export type RefreshIconProps={
+	refreshFn: () => void
 }
+export type SortProps= {	
+	sorting: SortingOptions
+	setSorting: React.Dispatch<React.SetStateAction<SortingOptions>>
+}
+export type VisibleItemProps={
+	setVisible: React.Dispatch<React.SetStateAction<CityDataProps[]>>
+	visibleItems: CityDataProps[]
+}
+export type SearchItemProps={
+	searchText: string
+	setSearchText: React.Dispatch<React.SetStateAction<string>>
+}
+export type HiddenItemProps={
+	setHiddenItems: React.Dispatch<React.SetStateAction<string[]>> 
+	hiddenItems: string[]
+}
+export type SearchBarProps= SearchItemProps 
+
+export type SortIconProps= SortProps & VisibleItemProps
+export type TypeHeaderProps= SearchBarProps & RefreshIconProps &
+	HiddenItemProps & VisibleItemProps & SortIconProps
+
 export type TypeNoItem={
 	title: string
 }
@@ -75,18 +91,6 @@ export interface ListProps<TItem>{
 }
 export type CityDetailProps={
 	id: string
-}
-export type SortIconProps= {
-	arr: CityDataProps[]
-	sorting: SortingOptions
-	setVisible: React.Dispatch<React.SetStateAction<CityDataProps[]>>
-	setSorting: React.Dispatch<React.SetStateAction<SortingOptions>>
-}
-export type SearchBarProps={
-	sorting: SortingOptions
-	visibleItems: CityDataProps[]
-	setSearchText: React.Dispatch<React.SetStateAction<string>>
-	setSorting: React.Dispatch<React.SetStateAction<SortingOptions>>
 }
 export type TypeTempConvert= {
 	type:string,

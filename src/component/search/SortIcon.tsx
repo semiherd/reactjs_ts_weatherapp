@@ -5,10 +5,10 @@ import { FaSortAlphaDown,FaSortAlphaDownAlt } from "react-icons/fa";
 
 const SortIcon = (props:SortIconProps):JSX.Element => {
 
-	const {setSorting,setVisible,sorting,arr}= props
+	const {setSorting,setVisible,sorting,visibleItems}= props
 
 	const handleSort= ():void => {
-		const sorted= sortByKey(arr, "name",sorting)
+		const sorted= sortByKey(visibleItems, "name",sorting)
 		setVisible([...sorted])
 	}
 	const updateSort= ():void => {
