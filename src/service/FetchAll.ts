@@ -1,8 +1,9 @@
 import axios from 'axios'
 import {TypeCity} from '../type'
+import {apiData} from '../asset/apiData'
 
 export const fetchAll= async ():Promise<TypeCity[]> => {
-  const urlString= 'https://us-central1-mobile-assignment-server.cloudfunctions.net/weather'
-  const response = await axios.get('https://cors-anywhere.herokuapp.com/' + urlString);
-  return response.data
+  // const urlString= '***'
+  // const response = await axios.get(urlString);
+  return apiData
 }
