@@ -23,10 +23,7 @@ Celsius = (Fahrenheit - 32) / 1.8
 I share view of the app below.<br><br>
 
 
-
-<img width="1435" alt="Screenshot 2023-09-08 at 18 16 29" src="https://github.com/semiherd/weather_city/assets/82077230/8263027e-d44e-4426-bae6-f235af3235f4">
-<img width="1435" alt="Screenshot 2023-09-08 at 18 16 29" src="https://github.com/semiherd/weather_city/assets/82077230/988441d9-016a-4291-8d26-68923b33050f">
-
+https://github.com/semiherd/weather_city/assets/82077230/119a0781-6c23-4db3-ab01-9f87f26a1e23
 
 
 
