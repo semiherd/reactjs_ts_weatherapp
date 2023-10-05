@@ -8,7 +8,7 @@ const CityAction= (props:CityActionProp):JSX.Element => {
 		hideCity(item)
 		const checkBoxId= `${item}-action-checkbox`
 		const elm = document.getElementById(checkBoxId) as HTMLInputElement| null;
-		elm!.checked = false;
+		if(elm) elm!.checked = false;
 	}
 
 	return(
