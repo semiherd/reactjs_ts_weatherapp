@@ -24,10 +24,13 @@ I share view of the app below.<br><br>
 
 
 
-https://github.com/semiherd/weather_city/assets/82077230/570de209-ee0f-4056-ba76-34e0a976e913
-<br>
-https://github.com/semiherd/weather_city/assets/82077230/416dda0b-98fe-4481-879a-56507d854aed
-<br><br>
+
+https://github.com/semiherd/weather_city/assets/82077230/8263027e-d44e-4426-bae6-f235af3235f4
+
+
+https://github.com/semiherd/weather_city/assets/82077230/988441d9-016a-4291-8d26-68923b33050f
+
+
 
 <img width="1435" alt="Screenshot 2023-09-08 at 18 16 29" src="https://github.com/semiherd/elements_interview_project/assets/82077230/e4f9538d-ec29-466a-8aa7-6aa34ea07c66">
 <img width="1435" alt="Screenshot 2023-09-08 at 18 16 46" src="https://github.com/semiherd/elements_interview_project/assets/82077230/db66b9ee-f662-497c-a1b6-e6935bff4931">
