@@ -24,7 +24,12 @@ I share view of the app below.<br><br>
 
 <img width="1435" alt="Screenshot 2023-09-08 at 18 17 01" src="https://github.com/semiherd/reactjs_ts_weatherapp/assets/82077230/d925d6ae-7d5a-47b7-908f-84e00d059627">
 
+https://github.com/semiherd/reactjs_ts_weatherapp/assets/82077230/fe9e7c36-17be-4764-86c3-e13f5febe9c7
+
+https://github.com/semiherd/reactjs_ts_weatherapp/assets/82077230/d5b08aeb-fe03-47ad-a445-3faa1baae3a9
+
+https://github.com/semiherd/reactjs_ts_weatherapp/assets/82077230/ce42e5a5-5350-4ed2-ae1b-8a99593bd483
 
 
-https://github.com/semiherd/reactjs_ts_weatherapp/assets/82077230/20705efb-c27a-498a-a434-6083ce68e939
+
 
