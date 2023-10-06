@@ -26,7 +26,5 @@ I share view of the app below.<br><br>
 
 
 
+https://github.com/semiherd/reactjs_ts_weatherapp/assets/82077230/20705efb-c27a-498a-a434-6083ce68e939
 
-<img width="1435" alt="Screenshot 2023-09-08 at 18 16 29" src="https://github.com/semiherd/elements_interview_project/assets/82077230/e4f9538d-ec29-466a-8aa7-6aa34ea07c66">
-<img width="1435" alt="Screenshot 2023-09-08 at 18 16 46" src="https://github.com/semiherd/elements_interview_project/assets/82077230/db66b9ee-f662-497c-a1b6-e6935bff4931">
-<img width="1435" alt="Screenshot 2023-09-08 at 18 17 01" src="https://github.com/semiherd/elements_interview_project/assets/82077230/7ae06c5f-0d9c-4448-bb33-e1b051c62e7d">
