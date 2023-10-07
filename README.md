@@ -1,8 +1,3 @@
-SIMPLE COUNTRY SEARCH <br><br>
-- I started developing with typescript template on "npx create-react-app"
-- I used mobile first responsive approach.<br><br>
-The app can be run in the development mode by typing "npm start" in the project directory of the terminal.<br>
-http://localhost:3000 to view it in the browser.<br><br>
 Libraries Used:<br>
 - cors-anywhere<br>
 - axios<br>
